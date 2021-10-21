@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lev2_3_html-vertiefung_forms</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section>
+        <form action="">
+            <fieldset>
+                <legend>Register form</legend>
+                <table>
+                <tr>
+                    <td><label for="Name">Name:</label></td>
+                    <td><input type="text" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="Surname">Surname:</label></td>
+                    <td><input type="text" placeholder="Surname"></td>
+                </tr>
+                <tr>    
+                    <td><label for="Email">Email:</label></td>
+                    <td><input type="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="picture">Picture</label></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><label for="Gender">Gender:</label></td>
+                    <td>
+                        <label for="male">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                    </td>
+                </tr>
+                <tr>            
+                    <td><label>Country</label></td>
+                    <td>
+                        <select>
+                            <option>Germany</option>
+	                        <option>Spain</option>
+	                        <option>France</option>
+	                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Preferred Languages</label></td>
+                    <td>
+                        <select name="menu[]" multiple="multiple" size="4">
+                            <option value="html"> html </option>
+                            <option value="css"> css </option>
+                            <option value="js"> js </option>
+                            <option value="react"> react </option>
+                        </select> 
+                        <span>(for multiple choice, use cmd key)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="activity">Field of activity</label></td>
+                    <td><input type="checkbox" name="it" value="it">
+                        <label for="it"> IT </label>
+                        <input type="checkbox" name="design" value="design">
+                        <label for="design"> Design </label>
+                        <input type="checkbox" name="other" value="other">
+                        <label for="other"> Other </label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="Send" value="Send">
+                        <input type="reset" name="cancel" value="Cancel">
+                    </td>
+                </tr>
+                </table>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
